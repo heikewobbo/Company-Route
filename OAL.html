@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+
+	<html>
+
+		<head>
+
+			<meta name="viewport" content="width=device-width, initial-scale=1">
+
+			<link rel="stylesheet" href="style.css">
+
+			<script src="scripts/fltSearch.js"></script>
+
+			<title>Olympic Airlines</title>
+
+			<h2 align="center">Olympic Airlines - OAL</h2>
+
+			<button class="HomeBtn" align="right"><a href="Home.html">Home</a></button>
+
+		</head>
+
+
+
+		<body class="oal">
+
+
+
+			<div class="PageTitle">
+
+				<h3>Select your flight</h3>
+
+				<h5>General Information</h5>
+
+				<p>Airline : OAL - FLTNMB from 1100</p>
+
+			</div>
+
+			<hr />
+
+			<input type="text" id="DepSearch" onkeyup="DepFunction()" placeholder="Search for departure...">
+			<input type="text" id="ArrSearch" onkeyup="ArrFunction()" placeholder="Search for arrivals...">
+			<input type="text" id="ACSearch" onkeyup="ACFunction()" placeholder="Search for A/C - Callsign...">
+
+			<table id="List">
+
+				<tr class="header" style="background-color: #f1f1f1d2;">
+
+					<th style="width:10%; color:black;">DEP</th>
+
+					<th style="width:10%; color:black;">ARR</th>
+
+					<th style="width:40%; color:black;">A/C-Callsign</th>
+
+					<th style="width:10%; color:black;">Create Plan</th>
+
+				</tr>
+
+				<tr>
+
+					<td class="airportICAO">LGKP<div class="airportName">Karpathos<div class="airportIATA">AOK</div></div></td>
+
+					<td class="airportICAO">LGAV<div class="airportName">Athen<div class="airportIATA">ATH</div></div></td>
+
+					<td>DH8D - OAL1100</td>
+
+					<td class="link"><a href="http://www.simbrief.com/system/dispatch.php?airline=OAL&fltnum=1100&type=DH8D&orig=LGKP&dest=LGAV"
+							target="_blank">Generate</a></td>
+
+				</tr>
+
+				<tr>
+
+					<td class="airportICAO">LGKP<div class="airportName">Karpathos<div class="airportIATA">AOK</div></div></td>
+
+					<td class="airportICAO">LGKS<div class="airportName">Kasos<div class="airportIATA">KSJ</div></div></td>
+
+					<td>DH8D - OAL1101</td>
+
+					<td class="link"><a href="http://www.simbrief.com/system/dispatch.php?airline=OAL&fltnum=1101&type=DH8D&orig=LGKP&dest=LGKS"
+							target="_blank">Generate</a></td>
+
+				</tr>
+
+				<tr>
+
+					<td class="airportICAO">LGKP<div class="airportName">Karpathos<div class="airportIATA">AOK</div></div></td>
+
+					<td class="airportICAO">LGRP<div class="airportName">Rhodes<div class="airportIATA">RHO</div></div></td>
+
+					<td>DH8D - OAL1102</td>
+
+					<td class="link"><a href="http://www.simbrief.com/system/dispatch.php?airline=OAL&fltnum=1102&type=DH8D&orig=LGKP&dest=LGRP"
+							target="_blank">Generate</a></td>
+
+				</tr>
+
+				<tr>
+
+					<td class="airportICAO">LGAV<div class="airportName">Athen<div class="airportIATA">ATH</div></div></td>
+
+					<td class="airportICAO">LGKP<div class="airportName">Karpathos<div class="airportIATA">AOK</div></div></td>
+
+					<td>DH8D - OAL1103</td>
+
+					<td class="link"><a href="http://www.simbrief.com/system/dispatch.php?airline=OAL&fltnum=1103&type=DH8D&orig=LGAV&dest=LGKP"
+							target="_blank">Generate</a></td>
+
+				</tr>
+
+				<tr>
+
+					<td class="airportICAO">LGAV<div class="airportName">Athen<div class="airportIATA">ATH</div></div></td>
+
+					<td class="airportICAO">LGKF<div class="airportName">Kefallinia<div class="airportIATA">EFL</div></div></td>
+
+					<td>DH8D - OAL1104</td>
+
+					<td class="link"><a href="http://www.simbrief.com/system/dispatch.php?airline=OAL&fltnum=1104&type=DH8D&orig=LGAV&dest=LGKF"
+							target="_blank">Generate</a></td>
+
+				</tr>
+
+				<tr>
+
+					<td class="airportICAO">LGAV<div class="airportName">Athen<div class="airportIATA">ATH</div></div></td>
+
+					<td class="airportICAO">LGIK<div class="airportName">Ikaria Island<div class="airportIATA">JIK</div></div></td>
+
+					<td>DH8D - OAL1105</td>
+
+					<td class="link"><a href="http://www.simbrief.com/system/dispatch.php?airline=OAL&fltnum=1105&type=DH8D&orig=LGAV&dest=LGIK"
+							target="_blank">Generate</a></td>
+
+				</tr>
+
+				<tr>
+
+					<td class="airportICAO">LGAV<div class="airportName">Athen<div class="airportIATA">ATH</div></div></td>
+
+					<td class="airportICAO">LGKY<div class="airportName">Kalymnos<div class="airportIATA">JKL</div></div></td>
+
+					<td>DH8D - OAL1106</td>
+
+					<td class="link"><a href="http://www.simbrief.com/system/dispatch.php?airline=OAL&fltnum=1106&type=DH8D&orig=LGAV&dest=LGKY"
+							target="_blank">Generate</a></td>
+
+				</tr>
+
+				<tr>
+
+					<td class="airportICAO">LGAV<div class="airportName">Athen<div class="airportIATA">ATH</div></div></td>
+
+					<td class="airportICAO">LGNX<div class="airportName">Naxos<div class="airportIATA">JNX</div></div></td>
+
+					<td>DH8D - OAL1107</td>
+
+					<td class="link"><a href="http://www.simbrief.com/system/dispatch.php?airline=OAL&fltnum=1107&type=DH8D&orig=LGAV&dest=LGNX"
+							target="_blank">Generate</a></td>
+
+				</tr>
+
+				<tr>
+
+					<td class="airportICAO">LGAV<div class="airportName">Athen<div class="airportIATA">ATH</div></div></td>
+
+					<td class="airportICAO">LGSK<div class="airportName">Skiathos<div class="airportIATA">JSI</div></div></td>
+
+					<td>DH8D - OAL1108</td>
+
+					<td class="link"><a href="http://www.simbrief.com/system/dispatch.php?airline=OAL&fltnum=1108&type=DH8D&orig=LGAV&dest=LGSK"
+							target="_blank">Generate</a></td>
+
+				</tr>
+
+			</table>
+
+	</body>
+
+</html>
